@@ -34,20 +34,32 @@ function Body() {
         </p>
       </div>
       <div style={styles.contactBtnsContainer}>
-        <div className="home-body-btn front-phone-btn active-stretch">
+        <Link
+          to="tel:+2349038043846"
+          target="_blank"
+          className="home-body-btn front-phone-btn active-stretch"
+        >
           <p>Phone</p>
           <FaPhone />
-        </div>
+        </Link>
         <p style={styles.contactOR}>OR</p>
-        <div className="home-body-btn front-email-btn active-stretch">
+        <Link
+          to="mailto:fuzzyguide@gmail.com"
+          target="_blank"
+          className="home-body-btn front-email-btn active-stretch"
+        >
           <p>E-mail</p>
           <FaEnvelope />
-        </div>
+        </Link>
         <p style={styles.contactOR}>OR</p>
-        <div className="home-body-btn front-list-btn active-stretch">
+        <Link
+          to="https://google.com"
+          target="_blank"
+          className="home-body-btn front-list-btn active-stretch"
+        >
           <p>Google Form</p>
           <FaList />
-        </div>
+        </Link>
       </div>
       <footer style={styles.footer}>
         <small>
