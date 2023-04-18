@@ -1,3 +1,17 @@
+:root {
+  --primary-color: #C80000;
+  --secondary-color: #6B00D6;
+  --black: #121212;
+  --white: #F6F6F6;
+  --phone-color: #0EAC00;
+  --email-color: #FF5722;
+  --form-color: #9C27B0;
+  --gray-dark: #393939;
+
+  /* EFFECTS */
+  --primary-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,4 +29,127 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.active-stretch:active {
+  transition: 0.15s;
+  transform: scaleX(1.01);
+}
+
+.front-nav-btn {
+  padding: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: small;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+
+.front-nav-login-btn {
+  background-color: var(--secondary-color);
+}
+
+.front-nav-btn:hover {
+  background-color: var(--black);
+}
+
+.home-front-btn {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--black);
+  position: relative;
+  height: 48px;
+  width: 360px;
+  overflow: hidden;
+  box-shadow: var(--primary-shadow);
+}
+
+.home-front-btn:hover {
+  color: var(--white);
+  box-shadow: none;
+}
+
+.home-front-btn > .home-front-btn-effect-bg {
+  background-color: var(--white);
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  transition: 0.15s;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.home-front-btn:hover > .home-front-btn-effect-bg {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: inline;
+}
+
+.home-front-btn > .home-front-btn-icon {
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+}
+
+.home-front-btn > p {
+  position: absolute;
+  z-index: 1;
+}
+
+.bg-white {
+  background-color: white;
+  color: black;
+}
+
+.bg-white > .home-front-btn-effect-bg {
+  background-color: var(--black);
+}
+
+.home-body-btn {
+  width: 180px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.home-body-btn:hover {
+  background-color: var(--primary-color);
+  transition: 0.15s;
+}
+
+.front-phone-btn {
+  background-color: var(--phone-color);
+}
+.front-email-btn {
+  background-color: var(--email-color);
+}
+.front-list-btn {
+  background-color: var(--form-color);
+}
+
+.home-front-footer-link {
+  color: var(--gray-dark);
+}
+
+.home-front-footer-link:hover {
+  color: var(--primary-color);
 }
