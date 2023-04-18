@@ -20,6 +20,7 @@ function Front() {
         </Link>
         <Link
           to="https://youtube.com/"
+          target="_target"
           className="home-front-btn active-stretch"
         >
           <div className="home-front-btn-effect-bg" />

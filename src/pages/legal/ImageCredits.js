@@ -14,10 +14,11 @@ function ImageCredits() {
 const styles = Stylesheet.create({
   container: {
     marginTop: 80,
-    minHeight: "calc(100vh - 80px)",
-    backgroundColor: "var(--white)",
   },
-  content: {},
+  content: {
+    backgroundColor: "var(--white)",
+    minHeight: "calc(100vh - 110px)",
+  },
 });
 
 export default ImageCredits;
