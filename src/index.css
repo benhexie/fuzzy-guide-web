@@ -28,7 +28,7 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 a {
@@ -44,6 +44,7 @@ a {
 .front-nav-btn {
   padding: 7px;
   padding-left: 12px;
+  white-space: nowrap;
   padding-right: 12px;
   font-size: small;
   border-radius: 20px;
@@ -60,6 +61,7 @@ a {
 }
 
 .home-front-btn {
+  white-space: nowrap;
   padding: 10px;
   display: flex;
   gap: 10px;
@@ -120,6 +122,7 @@ a {
 }
 
 .home-body-btn {
+  white-space: nowrap;
   width: 180px;
   height: 48px;
   display: flex;

@@ -19,6 +19,7 @@ function Home() {
 const styles = Stylesheet.create({
   container: {
     marginTop: 80,
+    width: "100%",
   },
 });
 

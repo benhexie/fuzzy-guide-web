@@ -42,6 +42,7 @@ const styles = Stylesheet.create({
     gap: 10,
     alignItems: "center",
     color: "var(--primary-color)",
+    whiteSpace: "nowrap",
   },
   logo: {
     width: 20,

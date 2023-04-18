@@ -72,7 +72,8 @@ function Body() {
 const styles = Stylesheet.create({
   container: {
     width: "100%",
-    height: "calc(100vh - 30px)",
+    height: "auto",
+    minHeight: "calc(100vh - 30px)",
     backgroundColor: "var(--white)",
     boxShadow: "var(--primary-shadow)",
     padding: 50,
